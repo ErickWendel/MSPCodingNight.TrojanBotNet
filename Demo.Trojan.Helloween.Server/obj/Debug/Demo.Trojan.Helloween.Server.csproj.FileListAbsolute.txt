@@ -1,0 +1,7 @@
+\\vmware-host\Shared Folders\Desktop\Demo.Trojan.Helloween\Demo.Trojan.Helloween.Server\bin\Debug\Demo.Trojan.Helloween.Server.exe.config
+\\vmware-host\Shared Folders\Desktop\Demo.Trojan.Helloween\Demo.Trojan.Helloween.Server\bin\Debug\Demo.Trojan.Helloween.Server.exe
+\\vmware-host\Shared Folders\Desktop\Demo.Trojan.Helloween\Demo.Trojan.Helloween.Server\bin\Debug\Demo.Trojan.Helloween.Server.pdb
+\\vmware-host\Shared Folders\Desktop\Demo.Trojan.Helloween\Demo.Trojan.Helloween.Server\obj\Debug\Demo.Trojan.Helloween.Server.csprojResolveAssemblyReference.cache
+\\vmware-host\Shared Folders\Desktop\Demo.Trojan.Helloween\Demo.Trojan.Helloween.Server\obj\Debug\Demo.Trojan.Helloween.Server.exe
+\\vmware-host\Shared Folders\Desktop\Demo.Trojan.Helloween\Demo.Trojan.Helloween.Server\obj\Debug\Demo.Trojan.Helloween.Server.pdb
+\\vmware-host\Shared Folders\Desktop\Demo.Trojan.Helloween\Demo.Trojan.Helloween.Server\bin\Debug\Fleck.dll

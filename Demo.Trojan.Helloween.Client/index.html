@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Painel de Controle</title>
+</head>
+<body>
+
+    <script>
+        var conexao;
+        
+        function connect() {
+            var ip = '172.16.175.129:6969';
+            conexao = new WebSocket('ws://' + ip);
+            conexao.onopen = function () {
+                alert('Conectado !');
+            }
+
+            conexao.onerror = function () {
+                alert('erro ao conectar-se');
+            }
+
+            conexao.onmessage = function (mensagem) {
+
+            }
+
+
+        }
+
+        function abrirIE() {
+            if (conexao)
+                conexao.send('open_ie');
+
+        }
+        function bloquearEstacao() {
+            conexao.send("lock_system")
+
+        }
+        function inverterBotoes() {
+            if (conexao)
+                conexao.send("inverter_botoes");
+        }
+        function normalizarBotoes() {
+            if (conexao)
+                conexao.send("normalizar_botoes");
+        }
+        function desligarComputador() {
+            if (conexao)
+                conexao.send("desligar_computador");
+        }
+        
+
+    </script>
+
+    <input type="button" name="btnConectar" value="Conectar" onclick="connect()"/>
+    <br />
+    <input type="button" name="btnAbrirIE" value="Abrir Internet Explorer" onclick="abrirIE()"/>
+    <br />
+    <input type="button" name="btnBloquearEstacao" value="Bloquear Estação" onclick="bloquearEstacao()"/>
+    <br />
+    <input type="button" name="btnInverterBotoes" value="Inverter Botoes do Mouse" onclick="inverterBotoes()"/>
+    <br />
+    <input type="button" name="btnNormalizarBotoes" value="Normalizar Botoes do Mouse" onclick="normalizarBotoes()" />
+    <br />
+    <input type="button" name="btnDesligarComputador" value="Desligar Computador" onclick="desligarComputador()" />
+    <br />
+
+</body>
+</html>
